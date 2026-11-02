@@ -1,0 +1,5 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>스터디 관리</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><main><h1>스터디 관리</h1><p id="message"></p>
+<section id="auth"><div class="card"><h2>회원가입</h2><form id="signup"><input name="username" placeholder="아이디" required><input name="password" type="password" placeholder="비밀번호" required><button>가입</button></form></div><div class="card"><h2>로그인</h2><form id="login"><input name="username" placeholder="아이디" required><input name="password" type="password" placeholder="비밀번호" required><button>로그인</button></form></div></section>
+<section id="app" hidden><div class="bar"><span id="welcome"></span><button id="logout">로그아웃</button></div><div class="card"><h2>할 일</h2><form id="task-form"><input name="title" placeholder="할 일을 입력하세요" required><button>추가</button></form><ul id="tasks"></ul></div><div class="card"><h2>출석</h2><button id="attendance">오늘 출석 체크</button><ul id="attendance-list"></ul></div></section></main><script src="/static/app.js"></script></body></html>
